@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	&:after, &:before {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+
+a, ul, li {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+h2 {
+	color: #555555;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	background-image: linear-gradient(#555555 100%, #555555 100%);
+	background-repeat: no-repeat;
+	background-size: 50px 2px;
+	background-position: bottom center;
+}
+.p-under-h2{
+	color: #555555;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+}
+h3 {
+	color: #555555;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.p-under-h3 {
+	color: #555555;
+	font-size: 14px;
+	font-family: 'Roboto Slab', serif;
+	line-height: 24px;
+}
+h4 {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+
+}
+.p-under-h4 {
+	color: #ffffff;
+	font-size: 12px;
+	font-family: 'Roboto Slab', serif;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+.button {
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: Transparent;
+	border: 2px solid #ffffff;
+	padding: 20px 40px;
+	letter-spacing: 2px;
+	&:hover {
+		background-color: #ffffff;
+		border: 2px solid #ffffff;
+		color: #c0301c;
+	}
+}
+
+.container {
+	width: 100%;
+	margin:  0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+	&:after, &:before {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.col {
+	float: left;
+	padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+	.container{
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container{
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container{
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container{
+		max-width: 1140px;
+	}
+}
+
+
+
+@import "components/home";
+@import "components/services";
+@import "components/about";
+@import "components/works";
+@import "components/paralax";
+@import "components/blog";
+@import "components/clients";
+@import "components/contact";
+@import "components/footer";

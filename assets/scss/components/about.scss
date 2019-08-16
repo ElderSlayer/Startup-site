@@ -1,0 +1,102 @@
+.about {
+	background-color: #f8f8f8;
+	padding: 100px 0;
+	&__title-info {
+		width: 50%;
+		margin: 0 auto 75px;
+		text-align: center;
+	}
+	&__information-row {
+		margin-bottom: 100px;
+	}
+	&__information-col {
+		width: 50%;
+	}
+	&__information {
+
+	}
+	&__members-col{
+		width: 25%;
+
+	}
+	&__members {
+		/*background-color: #c0301c;
+		height: 250px;*/
+		width: 100%;
+		max-width: 255px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__members-img {
+		position: relative;
+		margin-bottom: 20px;
+		height: 250px;
+		&:hover {
+			.about__members-hover {
+				opacity: 1;
+				transition: .3s ease all;
+			}
+		}
+		& img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+	&__members-hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		transition: .3s ease all;
+		display: flex;
+		/*align-items: center;*/
+		justify-content: center;
+	}
+	&__members-logo {
+		height: 28px;
+		width: 28px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto 0 30px;
+		& img {
+			height: auto;
+			width: auto;
+			object-fit: none;
+		}
+		&:hover {
+			background-color: #c0301c;
+		}
+	}
+}
+
+
+
+@media (max-width: 991px){
+	.about {
+
+		&__members-col {
+			width: 50%;
+			margin: 15px 0;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.about {
+		&__information-col {
+			width: 100%;
+			margin: 15px 0;
+		}
+		&__members-col {
+			width: 100%;
+			margin: 15px 0;
+		}
+	}
+}
+

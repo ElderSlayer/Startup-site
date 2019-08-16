@@ -1,0 +1,27 @@
+.paralax {
+	background: linear-gradient( rgba(192, 48, 28, 0.5) 100%, rgba(192, 48, 28, 0.5) 100%), url("/Startup/assets/img/paralax-bg.jpg") center;
+	background-size: cover;
+	padding: 100px 0;
+	&__info-button {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__info-block {
+		margin-bottom: 50px;
+	}
+	&__info {
+		color: #ffffff;
+		font-size: 30px;
+		font-family: 'Roboto Slab', serif;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px){
+	.paralax {
+		&__info-button {
+			width: 100%;
+		}
+	}
+}
